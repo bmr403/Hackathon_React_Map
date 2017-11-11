@@ -49,5 +49,6 @@ render() {
 }
 
 export default GoogleApiWrapper({
+	//your API key goes here
   apiKey: 'AIzaSyA4SqALhZOzZV8-yijgOGEO6mbBM1xvaT0'
 })(MapContainer) 
