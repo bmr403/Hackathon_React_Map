@@ -7,7 +7,6 @@
     "start": "webpack-dev-server",
     "dev": "./node_modules/.bin/webpack-dev-server --content-base public --inline --hot",
     "sonar-scanner": "node_modules/sonar-scanner/bin/sonar-scanner"
-}
   },
   "keywords": [],
   "author": "Mickey",
