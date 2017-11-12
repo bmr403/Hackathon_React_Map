@@ -1,20 +1,12 @@
 var axios = require('axios');
-const LOCAL_API = 'http://localhost:3000/users';
-const EXTERNAL_API = 'https://my-testing-api.herokuapp.com/users';
+const LOCAL_API = 'http://192.168.0.21:8080/RESTfulProject/REST/WebService/GetCustomers';
+const EXTERNAL_API = 'Some URL like www.nihilent.com';
 
 const API = {
-  getUsers: () => (
-    axios.get(EXTERNAL_API)
+  getCustomers: () => (
+    axios.get(LOCAL_API)
       .then(data => data)
       .catch(data =>{})
-  ),
-  addUser: user => {
-    console.log(user);
-    axios.post(EXTERNAL_API +'/signup', user)
-      .then(res => {
-        console.log(res.data)
-      })
-      .catch(data =>{});
-  }
+  )
 };
 export default API
